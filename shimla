@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love • Shimla Soulmate | Your Personal Local Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap');
+        
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        .hero-bg {
+            background: linear-gradient(rgba(15, 118, 110, 0.7), rgba(15, 118, 110, 0.8)),
+                        url('https://images.unsplash.com/photo-1589182373726-e4f658ab50f0') center/cover no-repeat fixed;
+        }
+        .place-card {
+            transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .place-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 25px 50px -12px rgb(15 118 110 / 0.4);
+        }
+        .snowflake {
+            position: absolute; color: rgba(255,255,255,0.85);
+            animation: snowfall linear infinite; z-index: 5; pointer-events: none;
+        }
+        @keyframes snowfall {
+            0% { transform: translateY(-120px) rotate(0deg); }
+            100% { transform: translateY(850px) rotate(360deg); }
+        }
+        .tail-text { font-family: 'Playfair Display', serif; }
+    </style>
+</head>
+<body class="bg-zinc-50 text-zinc-800">
+
+    <!-- NAVBAR -->
+    <nav class="bg-white/95 backdrop-blur-lg shadow fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-12 h-12 bg-emerald-700 rounded-3xl flex items-center justify-center text-white text-3xl shadow-inner">🏔️</div>
+                <div>
+                    <span class="text-4xl font-bold tail-text tracking-tighter text-emerald-800">Love</span>
+                    <p class="text-xs font-medium text-emerald-600 -mt-1">SHIMLA SOULMATE</p>
+                </div>
+            </div>
+            <div class="hidden md:flex gap-9 text-sm font-medium">
+                <a href="#places" class="hover:text-emerald-700 transition">Hidden Places</a>
+                <a href="#food" class="hover:text-emerald-700 transition">Food Experience</a>
+                <a href="#packages" class="hover:text-emerald-700 transition">Tour Packages</a>
+                <a href="#stories" class="hover:text-emerald-700 transition">Guest Stories</a>
+            </div>
+            <a href="https://wa.me/917009045864?text=Hi%20Love%2C%20I%20want%20to%20book%20a%20private%20tour%20with%20you" 
+               target="_blank"
+               class="bg-emerald-700 text-white px-8 py-3.5 rounded-3xl font-semibold flex items-center gap-3 hover:bg-emerald-800 transition">
+                <i class="fab fa-whatsapp"></i> WhatsApp Me
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero-bg h-screen flex items-center justify-center relative text-white">
+        <div id="snowflakes" class="absolute inset-0"></div>
+        <div class="text-center z-10 px-6 max-w-5xl">
+            <p class="text-emerald-200 text-lg font-medium tracking-widest mb-4">NAMASTE FROM THE HIMALAYAS</p>
+            <h1 class="text-6xl md:text-7xl font-black tail-text leading-none tracking-tighter mb-6">
+                Let me show you<br>the real Shimla
+            </h1>
+            <p class="max-w-xl mx-auto text-xl md:text-2xl font-light text-emerald-100">
+                I'm Love — born and raised here. No big tour groups. Just me, my old car, secret trails, temples, and home-cooked Himachali food.
+            </p>
+            <div class="mt-12 flex flex-col sm:flex-row gap-5 justify-center">
+                <a href="#book" 
+                   class="bg-white text-emerald-800 font-bold text-lg px-12 py-6 rounded-3xl shadow-2xl hover:scale-105 transition-all">
+                    Book Your Private Tour
+                </a>
+                <a href="https://wa.me/917009045864" target="_blank"
+                   class="border-2 border-white hover:bg-white/10 font-bold text-lg px-12 py-6 rounded-3xl flex items-center gap-3 transition">
+                    <i class="fab fa-whatsapp text-2xl"></i> Chat with Love
+                </a>
+            </div>
+        </div>
+
+        <!-- Profile peek -->
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 bg-white rounded-3xl p-2 shadow-2xl flex items-center gap-4">
+            <img src="https://i.ibb.co/S73Cdb9J/love-profile.jpg" class="w-16 h-16 rounded-2xl object-cover border-4 border-white">
+            <div class="text-emerald-900">
+                <p class="font-semibold">Love — Your Local Guide</p>
+                <p class="text-sm text-emerald-600">+91 70090 45864</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- PLACES SECTION -->
+    <section id="places" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="uppercase text-emerald-600 text-sm font-medium tracking-widest">My favourite hidden spots</span>
+                <h2 class="text-5xl font-bold tail-text text-zinc-900 mt-3">Places I'll take you</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <!-- Jakhu Temple - High quality image -->
+                <div class="place-card bg-white rounded-3xl overflow-hidden shadow-lg">
+                    <img src="https://i.ibb.co/0jZfVvY/aRZCx.jpg" 
+                         class="w-full h-72 object-cover" alt="Jakhu Temple">
+                    <div class="p-7">
+                        <h3 class="text-3xl font-bold text-emerald-700">Jakhu Temple</h3>
+                        <p class="mt-3 text-zinc-600">Highest point in Shimla. Beautiful sunrise, playful monkeys, and peaceful vibes. My top morning spot.</p>
+                        <p class="text-xs text-emerald-600 mt-6 flex items-center gap-2"><i class="fas fa-clock"></i> Best at sunrise • 30 min walk</p>
+                    </div>
+                </div>
+
+                <!-- Mall Road -->
+                <div class="place-card bg-white rounded-3xl overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1609766858214-9b3c0e4c3c3c" 
+                         class="w-full h-72 object-cover" alt="Mall Road">
+                    <div class="p-7">
+                        <h3 class="text-3xl font-bold text-emerald-700">Old Mall Road Lanes</h3>
+                        <p class="mt-3 text-zinc-600">Beyond the tourist crowd — quiet lanes, local shops, woollens, and the real soul of Shimla.</p>
+                    </div>
+                </div>
+
+                <!-- Christ Church -->
+                <div class="place-card bg-white rounded-3xl overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9" 
+                         class="w-full h-72 object-cover" alt="Christ Church">
+                    <div class="p-7">
+                        <h3 class="text-3xl font-bold text-emerald-700">Christ Church</h3>
+                        <p class="mt-3 text-zinc-600">Stunning neo-Gothic church. Golden hour makes the stained glass glow like a rainbow.</p>
+                    </div>
+                </div>
+
+                <!-- IIAS -->
+                <div class="place-card bg-white rounded-3xl overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1589182373726-e4f658ab50f0" 
+                         class="w-full h-72 object-cover" alt="IIAS Shimla">
+                    <div class="p-7">
+                        <h3 class="text-3xl font-bold text-emerald-700">IIAS - Vice Regal Lodge</h3>
+                        <p class="mt-3 text-zinc-600">Historic British mansion with rich stories. I know how to get private access.</p>
+                    </div>
+                </div>
+
+                <!-- Tara Devi Temple -->
+                <div class="place-card bg-white rounded-3xl overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1609766858214-9b3c0e4c3c3c" 
+                         class="w-full h-72 object-cover" alt="Tara Devi Temple">
+                    <div class="p-7">
+                        <h3 class="text-3xl font-bold text-emerald-700">Tara Devi Temple</h3>
+                        <p class="mt-3 text-zinc-600">Serene forest temple surrounded by deodar trees. Perfect for peace and prayer.</p>
+                    </div>
+                </div>
+
+                <!-- Forest Trail -->
+                <div class="place-card bg-white rounded-3xl overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4" 
+                         class="w-full h-72 object-cover" alt="Forest Trail">
+                    <div class="p-7">
+                        <h3 class="text-3xl font-bold text-emerald-700">Chhota Shimla Forest Trail</h3>
+                        <p class="mt-3 text-zinc-600">My secret 2-hour trail. Wildflowers, birds, and breathtaking valley views — no tourists.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOD EXPERIENCE -->
+    <section id="food" class="py-24 bg-emerald-950 text-white">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84" 
+                     class="rounded-3xl shadow-2xl" alt="Siddu">
+            </div>
+            <div>
+                <h2 class="text-5xl font-bold tail-text mb-8">Taste real Himachali food</h2>
+                <div class="space-y-10">
+                    <div class="flex gap-6">
+                        <div class="text-5xl">🥟</div>
+                        <div>
+                            <h4 class="text-2xl font-semibold">Fresh Siddu with Ghee & Jaggery</h4>
+                            <p class="text-emerald-200 mt-2">Made by my family the traditional way. You'll never forget the taste.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <div class="text-5xl">🍲</div>
+                        <div>
+                            <h4 class="text-2xl font-semibold">Temple Bhandara Thali</h4>
+                            <p class="text-emerald-200 mt-2">Simple, fresh, and full of love — straight from Jakhu Temple kitchen.</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="mt-12 text-emerald-400 text-sm font-medium">Every tour includes one authentic home-style meal — no extra cost.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PACKAGES -->
+    <section id="packages" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-bold tail-text">Choose Your Adventure</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="border border-zinc-200 rounded-3xl p-10 hover:border-emerald-300 transition">
+                    <h3 class="text-2xl font-semibold">Standard Half Day</h3>
+                    <p class="text-5xl font-bold mt-4 text-emerald-700">₹1,100</p>
+                    <ul class="mt-8 space-y-4 text-zinc-600">
+                        <li>4 hours private tour</li>
+                        <li>Hotel pickup & drop</li>
+                        <li>2-3 hidden spots</li>
+                        <li>Siddu tasting</li>
+                    </ul>
+                    <a href="https://wa.me/917009045864?text=Hi%20Love%2C%20I%20want%20the%20Standard%20tour" class="block mt-12 text-center py-4 bg-zinc-100 hover:bg-emerald-700 hover:text-white rounded-2xl font-semibold transition">Book Standard</a>
+                </div>
+
+                <div class="bg-emerald-700 text-white rounded-3xl p-10 relative scale-105 shadow-2xl">
+                    <div class="absolute top-6 right-6 bg-amber-400 text-emerald-900 px-5 py-1 text-xs font-bold rounded-3xl">MOST POPULAR</div>
+                    <h3 class="text-2xl font-semibold">Premium Full Day</h3>
+                    <p class="text-5xl font-bold mt-4">₹1,500</p>
+                    <ul class="mt-8 space-y-4">
+                        <li>8 hours private tour</li>
+                        <li>All 6 hidden gems</li>
+                        <li>Home-cooked lunch</li>
+                        <li>Exclusive sunset spot</li>
+                    </ul>
+                    <a href="https://wa.me/917009045864?text=Hi%20Love%2C%20I%20want%20the%20Premium%20Full%20Day%20tour" class="block mt-12 text-center py-4 bg-white text-emerald-700 rounded-2xl font-bold">Book Premium</a>
+                </div>
+
+                <div class="border border-zinc-200 rounded-3xl p-10 hover:border-emerald-300 transition">
+                    <h3 class="text-2xl font-semibold">2-Day Explorer</h3>
+                    <p class="text-5xl font-bold mt-4 text-emerald-700">₹2,000</p>
+                    <ul class="mt-8 space-y-4 text-zinc-600">
+                        <li>Two full days</li>
+                        <li>Forest trek + night walk</li>
+                        <li>Temple bhandara meals</li>
+                        <li>All photos included</li>
+                    </ul>
+                    <a href="https://wa.me/917009045864?text=Hi%20Love%2C%20I%20want%20the%202-Day%20Explorer%20tour" class="block mt-12 text-center py-4 bg-zinc-100 hover:bg-emerald-700 hover:text-white rounded-2xl font-semibold transition">Book Explorer</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section id="stories" class="py-24 bg-emerald-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-5xl font-bold tail-text text-center mb-12">What Guests Say</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-3xl shadow">
+                    <div class="text-amber-400 text-3xl">★★★★★</div>
+                    <p class="italic mt-6">"Love showed us the real Shimla. The forest trail made me emotional. Best experience ever."</p>
+                    <p class="mt-8 font-medium">Sarah Patel, Mumbai</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow">
+                    <div class="text-amber-400 text-3xl">★★★★★</div>
+                    <p class="italic mt-6">"Took my elderly parents. They loved every moment. Love treated us like family."</p>
+                    <p class="mt-8 font-medium">Rajesh Sharma, Delhi</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow">
+                    <div class="text-amber-400 text-3xl">★★★★★</div>
+                    <p class="italic mt-6">"Solo female traveller — felt completely safe and cherished. Highly recommend!"</p>
+                    <p class="mt-8 font-medium">Emma Thompson, UK</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL BOOKING CTA -->
+    <section id="book" class="py-28 bg-emerald-900 text-white text-center">
+        <div class="max-w-2xl mx-auto px-6">
+            <h2 class="text-5xl font-bold tail-text mb-6">Ready to create memories?</h2>
+            <p class="text-xl text-emerald-200 mb-10">Message me on WhatsApp and let's plan your perfect Shimla trip together.</p>
+            <a href="https://wa.me/917009045864?text=Hi%20Love%2C%20I'm%20interested%20in%20booking%20a%20tour%20with%20you" 
+               target="_blank"
+               class="inline-flex items-center gap-4 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-2xl px-16 py-7 rounded-3xl transition">
+                <i class="fab fa-whatsapp text-4xl"></i>
+                +91 70090 45864
+            </a>
+            <p class="text-emerald-400 mt-8 text-sm">Usually reply within minutes • Available 24×7</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black text-white py-16 text-center">
+        <div class="max-w-7xl mx-auto px-6">
+            <p class="text-4xl mb-3">🏔️ ❤️</p>
+            <p class="text-2xl font-light">Made with pure Himalayan love</p>
+            <p class="mt-8 text-zinc-400">© 2026 Love | Shimla Soulmate Guide</p>
+            <p class="text-xs text-zinc-500 mt-6">A Jalandhar boy who fell in love with Shimla hills</p>
+        </div>
+    </footer>
+
+    <script>
+        // Snowflakes
+        function createSnowflakes() {
+            const container = document.getElementById('snowflakes');
+            for (let i = 0; i < 80; i++) {
+                const flake = document.createElement('div');
+                flake.className = 'snowflake';
+                flake.innerHTML = '❄️';
+                flake.style.left = Math.random() * 100 + 'vw';
+                flake.style.fontSize = (Math.random() * 18 + 14) + 'px';
+                flake.style.animationDuration = (Math.random() * 10 + 10) + 's';
+                flake.style.animationDelay = '-' + (Math.random() * 20) + 's';
+                container.appendChild(flake);
+                setTimeout(() => flake.remove(), 35000);
+            }
+        }
+        setInterval(() => { if (Math.random() > 0.4) createSnowflakes(); }, 600);
+        createSnowflakes();
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                if (this.getAttribute('href').length > 1) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
